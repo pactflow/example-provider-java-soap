@@ -15,6 +15,10 @@ public class Projects {
   @JacksonXmlProperty(localName = "project")
   private List<Project> projects = new ArrayList<>();
 
+  @JacksonXmlElementWrapper(useWrapping = false)
+  @JacksonXmlProperty(localName = "foo")
+  private List<Foo> foos = new ArrayList<>();
+
   @JacksonXmlProperty(isAttribute = true)
   private String id;
 }

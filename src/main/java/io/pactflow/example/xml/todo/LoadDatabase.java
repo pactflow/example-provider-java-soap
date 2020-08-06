@@ -30,11 +30,17 @@ class LoadDatabase {
     p.setId(100);
     p.setTasks(taskList);
 
+
     List<Project> projectsList = new ArrayList<Project>();
     projectsList.add(p);
     Projects projects = new Projects();
     projects.setProjects(projectsList);
     projects.setId("1234");
+
+    // To show that extra elements are just ignored
+    List<Foo> foos = new ArrayList<Foo>();
+    foos.add(new Foo("baz"));
+    projects.setFoos(foos);
 
     return args -> {
       log.info("Preloading projets");
