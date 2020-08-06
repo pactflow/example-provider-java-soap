@@ -25,9 +25,6 @@ dependencies {
 	implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.2'
 	testCompile 'au.com.dius:pact-jvm-provider-junit5:4.0.10'
 	testCompile 'au.com.dius:pact-jvm-provider-spring:4.0.10'
-	// https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
-
-
 	runtimeOnly 'com.h2database:h2'
   compileOnly 'org.projectlombok:lombok'
   annotationProcessor 'org.projectlombok:lombok'
@@ -38,20 +35,4 @@ dependencies {
 
 test {
 	useJUnitPlatform()
-}
-
-pact {
-
-    broker {
-        pactBrokerUrl = System.getenv('PACT_BROKER_BASE_URL')
-        pactBrokerToken = System.getenv('PACT_BROKER_TOKEN')
-    }
-
-    serviceProviders {
-			"pactflow-example-provider" {
- 				fromPactBroker {
-        	selectors = latestTags('master') // specify your tags here. You can leave this out to just use the latest pacts
-      	}
-			}
-    }
 }
