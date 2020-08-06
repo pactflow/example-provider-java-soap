@@ -15,8 +15,6 @@ class LoadDatabase {
 
   @Bean
   CommandLineRunner initDatabase(ProjectsRepository repository) {
-
-    // TODO: randomise data with faker
     Task task = new Task();
     task.setName("Task 1");
     task.setDone(true);

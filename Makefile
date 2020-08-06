@@ -1,6 +1,6 @@
-PACTICIPANT := "pactflow-example-provider-springboot"
-WEBHOOK_UUID := "9GS-Z8nSAbUzvJW4xmhdsg"
-TRIGGER_PROVIDER_BUILD_URL := "https://api.travis-ci.com/repo/pactflow%2Fexample-provider-springboot/requests"
+PACTICIPANT := "pactflow-example-provider-java-soap"
+WEBHOOK_UUID := "962805aa-9f31-4a07-8d54-2355344a6f47"
+TRIGGER_PROVIDER_BUILD_URL := "https://api.travis-ci.com/repo/pactflow%2Fexample-provider-java-soap/requests"
 
 # Only deploy from master
 ifeq ($(TRAVIS_BRANCH),master)
