@@ -9,3 +9,4 @@ env:
   global:
   - PACT_BROKER_BASE_URL=https://dius.pactflow.io
   - PACT_BROKER_HOST=dius.pactflow.io
+  - PACT_BROKER_PUBLISH_VERIFICATION_RESULTS=true
