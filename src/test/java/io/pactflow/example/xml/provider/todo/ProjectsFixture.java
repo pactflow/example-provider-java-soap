@@ -25,7 +25,9 @@ public class ProjectsFixture {
 
     List<Project> projectsList = new ArrayList<Project>();
     projectsList.add(p);
-    Projects projects = Projects.of(RandomStringUtils.randomNumeric(4));
+    // This won't work until the XML Builder in Pact-JVM is fixed to allow matchers on the root element
+    //    Projects projects = Projects.of(RandomStringUtils.randomNumeric(4));
+    Projects projects = Projects.of("1234");
     projects.setProjects(projectsList);
 
     // To show that extra elements are just ignored
