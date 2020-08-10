@@ -7,8 +7,11 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Data
+@RequiredArgsConstructor(staticName="of")
 @JacksonXmlRootElement(localName = "projects", namespace = "http://some.namespace/and/more/stuff")
 public class Projects {
   @JacksonXmlElementWrapper(useWrapping = false)
@@ -20,9 +23,6 @@ public class Projects {
   private List<Foo> foos = new ArrayList<>();
 
   @JacksonXmlProperty(isAttribute = true)
+  @NonNull
   private String id;
-
-  public void add(Project project) {
-    projects.add(project);
-  }
 }

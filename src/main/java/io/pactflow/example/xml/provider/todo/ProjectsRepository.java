@@ -8,8 +8,4 @@ import lombok.Data;
 @Data
 public class ProjectsRepository {
   private Projects projects;
-
-  public void add(Project project) {
-    projects.add(project);
-  }
 }

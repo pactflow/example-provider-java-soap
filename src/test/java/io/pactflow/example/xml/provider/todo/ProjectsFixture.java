@@ -1,21 +1,13 @@
 package io.pactflow.example.xml.provider.todo;
 
-import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.RandomStringUtils;
 
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-@Slf4j
-class LoadDatabase {
-
-  @Bean
-  CommandLineRunner initDatabase(ProjectsRepository repository) {
+public class ProjectsFixture {
+  public static Projects sampleProjects() {
     Task task = new Task();
     task.setName("Task 1");
     task.setDone(true);
@@ -31,20 +23,14 @@ class LoadDatabase {
     p.setId(100);
     p.setTasks(taskList);
 
-
     List<Project> projectsList = new ArrayList<Project>();
     projectsList.add(p);
-    Projects projects = Projects.of("1234");
+    Projects projects = Projects.of(RandomStringUtils.randomNumeric(4));
     projects.setProjects(projectsList);
 
     // To show that extra elements are just ignored
-    List<Foo> foos = new ArrayList<Foo>();
-    foos.add(new Foo("baz"));
-    projects.setFoos(foos);
+    projects.setFoos(List.of(new Foo("baz")));
 
-    return args -> {
-      log.info("Preloading projets");
-      repository.setProjects(projects);
-    };
+    return projects;
   }
 }
