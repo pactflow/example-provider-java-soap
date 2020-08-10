@@ -1,7 +1,8 @@
-package io.pactflow.example.xml.todo;
+package io.pactflow.example.xml.provider.todo;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,14 +19,14 @@ class LoadDatabase {
     Task task = new Task();
     task.setName("Task 1");
     task.setDone(true);
-    task.setId(100);
+    task.setId(1001);
 
     List<Task> taskList = new ArrayList<Task>();
     taskList.add(task);
 
     Project p = new Project();
-    p.setName("Project 1");
-    p.setDue("2016-02-11T09:46:56.023Z");
+    p.setName("Project Test");
+    p.setDue(OffsetDateTime.now().toString());
     p.setType("activity");
     p.setId(100);
     p.setTasks(taskList);

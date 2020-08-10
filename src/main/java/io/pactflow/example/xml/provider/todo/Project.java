@@ -1,4 +1,4 @@
-package io.pactflow.example.xml.todo;
+package io.pactflow.example.xml.provider.todo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,18 +10,18 @@ import lombok.Data;
 @Data
 public class Project {
   @JacksonXmlProperty(isAttribute = true)
-  private int id;
+  int id;
 
   @JacksonXmlProperty(isAttribute = true)
-  private String type;
+  String type;
 
   @JacksonXmlProperty(isAttribute = true)
-  private String name;
+  String name;
 
   @JacksonXmlProperty(isAttribute = true)
-  private String due;
+  String due;
 
   @JacksonXmlProperty(localName = "task")
   @JacksonXmlElementWrapper(useWrapping = true, localName = "tasks")
-  private List<Task> tasks = new ArrayList<Task>();
+  List<Task> tasks = new ArrayList<Task>();
 }

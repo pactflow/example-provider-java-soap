@@ -1,4 +1,4 @@
-package io.pactflow.example.xml.todo;
+package io.pactflow.example.xml.provider.todo;
 
 import org.springframework.stereotype.Component;
 
@@ -8,4 +8,8 @@ import lombok.Data;
 @Data
 public class ProjectsRepository {
   private Projects projects;
+
+  public void add(Project project) {
+    projects.add(project);
+  }
 }

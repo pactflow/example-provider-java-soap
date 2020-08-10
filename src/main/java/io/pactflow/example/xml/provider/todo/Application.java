@@ -1,4 +1,4 @@
-package  io.pactflow.example.xml.todo;
+package io.pactflow.example.xml.provider.todo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

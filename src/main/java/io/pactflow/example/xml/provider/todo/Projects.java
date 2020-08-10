@@ -1,4 +1,4 @@
-package io.pactflow.example.xml.todo;
+package io.pactflow.example.xml.provider.todo;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
@@ -21,4 +21,8 @@ public class Projects {
 
   @JacksonXmlProperty(isAttribute = true)
   private String id;
+
+  public void add(Project project) {
+    projects.add(project);
+  }
 }

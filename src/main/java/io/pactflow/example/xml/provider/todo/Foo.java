@@ -1,4 +1,4 @@
-package io.pactflow.example.xml.todo;
+package io.pactflow.example.xml.provider.todo;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 

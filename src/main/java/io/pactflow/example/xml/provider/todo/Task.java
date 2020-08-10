@@ -1,4 +1,4 @@
-package io.pactflow.example.xml.todo;
+package io.pactflow.example.xml.provider.todo;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -14,11 +14,11 @@ import lombok.Data;
 @Data
 public class Task {
   @JacksonXmlProperty(isAttribute = true)
-  private int id;
+  int id;
 
   @JacksonXmlProperty(isAttribute = true)
-  private String name;
+  String name;
 
   @JacksonXmlProperty(isAttribute = true)
-  private Boolean done;
+  Boolean done;
 }
