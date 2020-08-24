@@ -1,4 +1,4 @@
-# Example Java Spring Boot Provider
+# Example Java XML Provider
 
 [![Build Status](https://travis-ci.com/pactflow/example-provider-java-soap.svg?branch=master)](https://travis-ci.com/pactflow/example-provider-java-soap)
 
