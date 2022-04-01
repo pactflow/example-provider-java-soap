@@ -1,7 +1,8 @@
 # Example Java XML Provider
 
+![Build](https://github.com/pactflow/example-provider-java-soap/workflows/Build/badge.svg)
 
-[![Can I deploy Status](https://testdemo.pactflow.io/pacticipants/pactflow-example-provider-java-soap/branches/master/latest-version/can-i-deploy/to-environment/production/badge.svg)](https://testdemo.pactflow.io/overview/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-soap-soap)
+[![Can I deploy Status](https://testdemo.pactflow.io/pacticipants/pactflow-example-provider-java-soap/branches/master/latest-version/can-i-deploy/to-environment/production/badge.svg)](https://testdemo.pactflow.io/overview/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-soap)
 
 [![Pact Status](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-java-soap/latest/badge.svg)](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-java-soap/latest) (latest pact)
 
