@@ -1,11 +1,11 @@
 # Example Java XML Provider
 
 
-[![Can I deploy Status](https://testdemo.pactflow.io/pacticipants/pactflow-example-provider-java-kafka/branches/master/latest-version/can-i-deploy/to-environment/production/badge.svg)](https://testdemo.pactflow.io/overview/provider/pactflow-example-provider-java-kafka/consumer/pactflow-example-consumer-soap-kafka)
+[![Can I deploy Status](https://testdemo.pactflow.io/pacticipants/pactflow-example-provider-java-soap/branches/master/latest-version/can-i-deploy/to-environment/production/badge.svg)](https://testdemo.pactflow.io/overview/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-soap-soap)
 
-[![Pact Status](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-kafka/consumer/pactflow-example-consumer-java-kafka/latest/badge.svg)](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-kafka/consumer/pactflow-example-consumer-java-kafka/latest) (latest pact)
+[![Pact Status](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-java-soap/latest/badge.svg)](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-java-soap/latest) (latest pact)
 
-[![Pact Status](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-kafka/consumer/pactflow-example-consumer-java-kafka/latest/master/badge.svg)](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-kafka/consumer/pactflow-example-consumer-java-kafka/latest/master) (master/master pact)
+[![Pact Status](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-java-soap/latest/master/badge.svg)](https://testdemo.pactflow.io/pacts/provider/pactflow-example-provider-java-soap/consumer/pactflow-example-consumer-java-soap/latest/master) (master/master pact)
 
 
 This is an example of a Java XML provider that uses Pact, [Pactflow](https://pactflow.io) and GitHub Actions to ensure that it is compatible with the expectations its consumers have of it.
