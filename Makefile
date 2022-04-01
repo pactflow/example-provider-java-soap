@@ -1,5 +1,6 @@
 PACTICIPANT := "pactflow-example-provider-java-soap"
 WEBHOOK_UUID := "962805aa-9f31-4a07-8d54-2355344a6f47"
+PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli:latest"
 
 # Only deploy from master
 ifeq ($(GIT_BRANCH),master)
