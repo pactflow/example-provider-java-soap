@@ -29,7 +29,7 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
-	testImplementation 'au.com.dius.pact.provider:junit5:4.5.13'
+	testImplementation 'au.com.dius.pact.provider:junit5:4.6.17'
 	testImplementation 'au.com.dius.pact.provider:spring6:4.5.13'
 	testImplementation 'org.apache.commons:commons-lang3:3.11'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
