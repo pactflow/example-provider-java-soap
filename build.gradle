@@ -31,7 +31,7 @@ dependencies {
 
 	testImplementation 'au.com.dius.pact.provider:junit5:4.6.17'
 	testImplementation 'au.com.dius.pact.provider:spring6:4.6.17'
-	testImplementation 'org.apache.commons:commons-lang3:3.18.0'
+	testImplementation 'org.apache.commons:commons-lang3:3.19.0'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
